@@ -16,6 +16,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet var countLabel: UILabel!
     @IBOutlet weak var lottery: UIButton!
     
+    var timer: Timer!
     
     var numbers: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 11, 11, 12, 12, 13, 13, 14, 14, 15, 15, 16, 16, 17, 17, 18, 18, 19, 19, 20, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
     
@@ -45,21 +46,40 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBAction func lotteryBtn() {
         
-        count = count - 1
-        countLabel.text = "あと\(count)個"
+        timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(randomAnime), userInfo: nil, repeats: true)
         
-        let random = Int.random(in: 0..<numbers.count)
+        lottery.isEnabled = false
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            
+            self.timer.invalidate()
+            self.count = self.count - 1
+            self.countLabel.text = "あと\(self.count)個"
+            
+            let random = Int.random(in: 0..<self.numbers.count)
+            self.label.text = String(self.numbers[random])
+            
+            self.getNumArray.append(self.numbers[random])
+            self.numbers.remove(at: random)
+            
+            self.collectionView.reloadData()
+            
+            self.lottery.isEnabled = true
+            
+            if self.count == 0 {
+                self.countLabel.text = "終了です！"
+                self.lottery.isEnabled = false
+            }
+            
+        }
+        
+    }
+    
+    @objc func randomAnime() {
+        
+        let random = Int.random(in: 0..<self.numbers.count)
         label.text = String(numbers[random])
         
-        getNumArray.append(numbers[random])
-        numbers.remove(at: random)
-        
-        collectionView.reloadData()
-        
-        if count == 0 {
-            countLabel.text = "終了です！"
-            lottery.isEnabled = false
-        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
