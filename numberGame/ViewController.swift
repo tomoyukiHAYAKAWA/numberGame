@@ -31,6 +31,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         
+        label.layer.cornerRadius = 20.0
+        lottery.layer.cornerRadius = 20.0
         
     }
     
@@ -40,7 +42,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         count = 20
         lottery.isEnabled = true
         countLabel.text = "あと\(count)個"
-        label.text = ""
+        label.text = "↓Tap↓"
         collectionView.reloadData()
     }
     
@@ -90,6 +92,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         if let label = cell.contentView.viewWithTag(1) as? UILabel {
             label.text = String(getNumArray[indexPath.row])
+            label.clipsToBounds = true
+            label.layer.cornerRadius = 10.0
         }
         return cell
     }
