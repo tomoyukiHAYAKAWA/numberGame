@@ -16,6 +16,7 @@
 		CC2CBC132254443D00F9EBD9 /* numberGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2CBC122254443D00F9EBD9 /* numberGameUITests.swift */; };
 		CCB4A85C22605A4A006397A9 /* ロゴまるsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB4A85B22605A4A006397A9 /* ロゴまるsmall.png */; };
 		CCB4A85D22605AF6006397A9 /* Makinas-4-Square.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCB4A85A22605990006397A9 /* Makinas-4-Square.otf */; };
+		CCB4A861226061A4006397A9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB4A860226061A4006397A9 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		CC2CBC142254443D00F9EBD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCB4A85A22605990006397A9 /* Makinas-4-Square.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Makinas-4-Square.otf"; sourceTree = "<group>"; };
 		CCB4A85B22605A4A006397A9 /* ロゴまるsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ロゴまるsmall.png"; sourceTree = "<group>"; };
+		CCB4A860226061A4006397A9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = "../../numberGame素材/icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		CC2CBBF12254443B00F9EBD9 /* numberGame */ = {
 			isa = PBXGroup;
 			children = (
+				CCB4A860226061A4006397A9 /* icon.png */,
 				CCB4A85B22605A4A006397A9 /* ロゴまるsmall.png */,
 				CCB4A85A22605990006397A9 /* Makinas-4-Square.otf */,
 				CC2CBBF22254443B00F9EBD9 /* AppDelegate.swift */,
@@ -199,13 +202,16 @@
 				TargetAttributes = {
 					CC2CBBEE2254443B00F9EBD9 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					CC2CBC022254443D00F9EBD9 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = CC2CBBEE2254443B00F9EBD9;
 					};
 					CC2CBC0D2254443D00F9EBD9 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = CC2CBBEE2254443B00F9EBD9;
 					};
 				};
@@ -237,6 +243,7 @@
 			files = (
 				CCB4A85D22605AF6006397A9 /* Makinas-4-Square.otf in Resources */,
 				CCB4A85C22605A4A006397A9 /* ロゴまるsmall.png in Resources */,
+				CCB4A861226061A4006397A9 /* icon.png in Resources */,
 				CC2CBBFD2254443D00F9EBD9 /* LaunchScreen.storyboard in Resources */,
 				CC2CBBFA2254443D00F9EBD9 /* Assets.xcassets in Resources */,
 				CC2CBBF82254443B00F9EBD9 /* Main.storyboard in Resources */,
@@ -449,8 +456,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Tomoyuki-Hayakawa.numberGame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -467,8 +474,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Tomoyuki-Hayakawa.numberGame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -487,7 +494,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Tomoyuki-Hayakawa.numberGameTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/numberGame.app/numberGame";
 			};
@@ -508,7 +515,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Tomoyuki-Hayakawa.numberGameTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/numberGame.app/numberGame";
 			};
@@ -528,7 +535,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Tomoyuki-Hayakawa.numberGameUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = numberGame;
 			};
@@ -548,7 +555,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Tomoyuki-Hayakawa.numberGameUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = numberGame;
 			};
