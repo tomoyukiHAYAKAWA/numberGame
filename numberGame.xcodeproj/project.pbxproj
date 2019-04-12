@@ -14,6 +14,8 @@
 		CC2CBBFD2254443D00F9EBD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2CBBFB2254443D00F9EBD9 /* LaunchScreen.storyboard */; };
 		CC2CBC082254443D00F9EBD9 /* numberGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2CBC072254443D00F9EBD9 /* numberGameTests.swift */; };
 		CC2CBC132254443D00F9EBD9 /* numberGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2CBC122254443D00F9EBD9 /* numberGameUITests.swift */; };
+		CCB4A85C22605A4A006397A9 /* ロゴまるsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB4A85B22605A4A006397A9 /* ロゴまるsmall.png */; };
+		CCB4A85D22605AF6006397A9 /* Makinas-4-Square.otf in Resources */ = {isa = PBXBuildFile; fileRef = CCB4A85A22605990006397A9 /* Makinas-4-Square.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		CC2CBC0E2254443D00F9EBD9 /* numberGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = numberGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2CBC122254443D00F9EBD9 /* numberGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numberGameUITests.swift; sourceTree = "<group>"; };
 		CC2CBC142254443D00F9EBD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCB4A85A22605990006397A9 /* Makinas-4-Square.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Makinas-4-Square.otf"; sourceTree = "<group>"; };
+		CCB4A85B22605A4A006397A9 /* ロゴまるsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ロゴまるsmall.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		CC2CBBF12254443B00F9EBD9 /* numberGame */ = {
 			isa = PBXGroup;
 			children = (
+				CCB4A85B22605A4A006397A9 /* ロゴまるsmall.png */,
+				CCB4A85A22605990006397A9 /* Makinas-4-Square.otf */,
 				CC2CBBF22254443B00F9EBD9 /* AppDelegate.swift */,
 				CC2CBBF42254443B00F9EBD9 /* ViewController.swift */,
 				CC2CBBF62254443B00F9EBD9 /* Main.storyboard */,
@@ -229,6 +235,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCB4A85D22605AF6006397A9 /* Makinas-4-Square.otf in Resources */,
+				CCB4A85C22605A4A006397A9 /* ロゴまるsmall.png in Resources */,
 				CC2CBBFD2254443D00F9EBD9 /* LaunchScreen.storyboard in Resources */,
 				CC2CBBFA2254443D00F9EBD9 /* Assets.xcassets in Resources */,
 				CC2CBBF82254443B00F9EBD9 /* Main.storyboard in Resources */,
