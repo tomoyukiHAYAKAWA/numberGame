@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7Yp-zr-OJS">
-                                <rect key="frame" x="0.0" y="58" width="375" height="324"/>
+                                <rect key="frame" x="0.0" y="58" width="375" height="304"/>
                                 <color key="backgroundColor" red="0.98039215800000001" green="0.78039217000000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HXr-1n-gzL">
                                     <size key="itemSize" width="63" height="60"/>
@@ -62,10 +62,9 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="↓Tap↓" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nd-4p-m89">
-                                <rect key="frame" x="59" y="426" width="258" height="150"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="59" y="406" width="258" height="130"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="zc5-Mh-OLo"/>
+                                    <constraint firstAttribute="height" constant="130" id="zc5-Mh-OLo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Makinas-4-Square" family="Makinas" pointSize="50"/>
                                 <nil key="textColor"/>
@@ -84,13 +83,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あと20個" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDQ-zD-Vey">
-                                <rect key="frame" x="84" y="401" width="207" height="17"/>
+                                <rect key="frame" x="84" y="381" width="207" height="17"/>
                                 <fontDescription key="fontDescription" name="Makinas-4-Square" family="Makinas" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXw-pf-w1I">
-                                <rect key="frame" x="59" y="584" width="258" height="63"/>
+                                <rect key="frame" x="59" y="544" width="258" height="63"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="6EW-CI-4fV"/>
@@ -116,7 +115,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4nd-4p-m89" secondAttribute="trailing" constant="58" id="ED1-u9-wse"/>
                             <constraint firstItem="sHw-hc-KtX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Hpx-qS-Coi"/>
                             <constraint firstItem="EXw-pf-w1I" firstAttribute="top" secondItem="4nd-4p-m89" secondAttribute="bottom" constant="8" id="KJp-HX-xAJ"/>
-                            <constraint firstAttribute="bottom" secondItem="EXw-pf-w1I" secondAttribute="bottom" constant="20" symbolic="YES" id="NYc-vO-r9V"/>
+                            <constraint firstAttribute="bottom" secondItem="EXw-pf-w1I" secondAttribute="bottom" constant="60" id="NYc-vO-r9V"/>
                             <constraint firstItem="4nd-4p-m89" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="Rr2-CK-cgg"/>
                             <constraint firstItem="7Yp-zr-OJS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RvU-Or-HMa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IDQ-zD-Vey" secondAttribute="trailing" constant="84" id="ZoK-4H-Jmg"/>
